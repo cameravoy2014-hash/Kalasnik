@@ -1,57 +1,165 @@
+
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalasnik | Horror Game</title>
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="BLACK PINES — Official horror game website">
+  <title>BLACK PINES | Official</title>
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080808;
+      color: #f2f2f2;
       font-family: Arial, sans-serif;
-      background: #090909;
-      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      border-bottom: 1px solid #292929;
+    }
+
+    .logo {
+      color: #c71919;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #e32626;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background:
+        radial-gradient(ellipse at center, #351010 0%, #111 42%, #080808 75%);
+    }
+
+    .tag {
+      color: #df2929;
+      letter-spacing: 5px;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 10vw, 100px);
+      font-weight: 900;
+      letter-spacing: 8px;
+      text-shadow: 0 0 35px #a00000;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-top: 20px;
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+    .date {
+      margin-top: 35px;
+      color: #eee;
+      border: 1px solid #8f1919;
+      padding: 13px 24px;
+      letter-spacing: 2px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      padding: 75px 25px;
       text-align: center;
     }
-    header {
+
+    h2 {
+      color: #d51f1f;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+
+    .about p {
+      color: #aaa;
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid #292929;
       padding: 25px;
-      background: #160707;
-      border-bottom: 2px solid #e21b1b;
+      text-align: center;
+      color: #666;
+      font-size: 13px;
     }
-    h1 { color: #ff2929; font-size: 42px; }
-    main { padding: 60px 20px; }
-    p { color: #ccc; font-size: 18px; }
-    .download {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 16px 35px;
-      background: #e21b1b;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 6px;
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      h1 {
+        letter-spacing: 3px;
+      }
     }
-    .download:hover { background: #a80000; }
-    footer { padding: 25px; color: #777; }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>KALASNIK</h1>
-    <p>My Horror Game</p>
+    <div class="logo">BLACK PINES</div>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+    </nav>
   </header>
 
   <main>
-    <h2>Welcome to my game</h2>
-    <p>Enter the darkness. Discover the mystery.</p>
-    <p>Windows PC uchun horror o‘yin.</p>
+    <section class="hero" id="home">
+      <p class="tag">SURVIVAL HORROR</p>
+      <h1>BLACK PINES</h1>
+      <p class="subtitle">THE FOREST NEVER FORGETS.</p>
+      <div class="date">OFFICIAL RELEASE — NOVEMBER 1</div>
+    </section>
 
-    <a class="download" href="#" onclick="alert('O‘yin fayli tez orada qo‘shiladi!'); return false;">
-      DOWNLOAD GAME
-    </a>
+    <section class="about" id="about">
+      <h2>ABOUT THE GAME</h2>
+      <p>
+        Enter the darkness of Black Pines.
+        Explore the unknown, uncover hidden secrets,
+        and discover what waits beyond the trees.
+      </p>
+    </section>
   </main>
 
-  <footer>© 2026 Kalasnik. All rights reserved.</footer>
+  <footer>
+    BLACK PINES &copy; 2026 — Official Website
+  </footer>
 </body>
 </html>
