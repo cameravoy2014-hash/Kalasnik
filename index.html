@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="BLACK PINES — Official horror game website">
-  <title>BLACK PINES | Official</title>
+  <meta name="description" content="NO WAY BACK — Official Survival Horror Game">
+  <title>NO WAY BACK | Official Website</title>
 
   <style>
     * {
@@ -15,23 +16,27 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background: #080808;
-      color: #f2f2f2;
+      color: #eee;
       font-family: Arial, sans-serif;
     }
 
     header {
+      padding: 24px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 8%;
       border-bottom: 1px solid #292929;
     }
 
     .logo {
-      color: #c71919;
-      font-size: 25px;
+      color: #d51f1f;
+      font-size: 23px;
       font-weight: 900;
       letter-spacing: 3px;
     }
@@ -39,8 +44,9 @@
     nav a {
       color: #ddd;
       text-decoration: none;
-      margin-left: 22px;
-      font-size: 14px;
+      margin-left: 24px;
+      font-size: 13px;
+      letter-spacing: 1px;
     }
 
     nav a:hover {
@@ -49,61 +55,74 @@
 
     .hero {
       min-height: 78vh;
+      padding: 50px 20px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 50px 20px;
       background:
-        radial-gradient(ellipse at center, #351010 0%, #111 42%, #080808 75%);
+        radial-gradient(ellipse at center, #351010 0%, #171010 35%, #080808 75%);
     }
 
     .tag {
-      color: #df2929;
-      letter-spacing: 5px;
+      color: #e32626;
       font-size: 12px;
-      margin-bottom: 22px;
+      letter-spacing: 6px;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: clamp(48px, 10vw, 100px);
+      font-size: clamp(50px, 11vw, 105px);
+      line-height: 1;
       font-weight: 900;
-      letter-spacing: 8px;
-      text-shadow: 0 0 35px #a00000;
+      letter-spacing: 5px;
+      text-shadow: 0 0 35px #9e0000;
     }
 
     .subtitle {
       color: #aaa;
-      margin-top: 20px;
-      font-size: 17px;
-      letter-spacing: 2px;
+      margin-top: 24px;
+      letter-spacing: 3px;
+      font-size: 14px;
     }
 
-    .date {
+    .platform {
       margin-top: 35px;
-      color: #eee;
-      border: 1px solid #8f1919;
-      padding: 13px 24px;
+      border: 1px solid #a51c1c;
+      padding: 14px 24px;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+
+    .release {
+      margin-top: 20px;
+      color: #999;
+      font-size: 12px;
       letter-spacing: 2px;
     }
 
     .about {
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
-      padding: 75px 25px;
+      padding: 80px 25px;
       text-align: center;
     }
 
     h2 {
-      color: #d51f1f;
+      color: #e32626;
       letter-spacing: 4px;
       margin-bottom: 24px;
     }
 
     .about p {
       color: #aaa;
-      line-height: 1.8;
+      line-height: 1.9;
+    }
+
+    .story {
+      margin-top: 24px;
+      color: #ddd !important;
     }
 
     footer {
@@ -111,20 +130,25 @@
       padding: 25px;
       text-align: center;
       color: #666;
-      font-size: 13px;
+      font-size: 12px;
+      letter-spacing: 1px;
     }
 
     @media (max-width: 600px) {
       header {
         flex-direction: column;
-        gap: 18px;
+        gap: 20px;
       }
 
       nav a {
-        margin: 0 8px;
+        margin: 0 10px;
       }
 
       h1 {
+        letter-spacing: 2px;
+      }
+
+      .tag {
         letter-spacing: 3px;
       }
     }
@@ -133,33 +157,46 @@
 
 <body>
   <header>
-    <div class="logo">BLACK PINES</div>
+    <div class="logo">NO WAY BACK</div>
+
     <nav>
       <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
+      <a href="#about">ABOUT THE GAME</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
       <p class="tag">SURVIVAL HORROR</p>
-      <h1>BLACK PINES</h1>
-      <p class="subtitle">THE FOREST NEVER FORGETS.</p>
-      <div class="date">OFFICIAL RELEASE — NOVEMBER 1</div>
+
+      <h1>NO WAY<br>BACK</h1>
+
+      <p class="subtitle">
+        ONE NIGHT. ONE ROAD. NO WAY BACK.
+      </p>
+
+      <div class="platform">FOR WINDOWS PC</div>
+
+      <p class="release">OFFICIAL RELEASE — NOVEMBER 1</p>
     </section>
 
     <section class="about" id="about">
       <h2>ABOUT THE GAME</h2>
+
       <p>
-        Enter the darkness of Black Pines.
-        Explore the unknown, uncover hidden secrets,
-        and discover what waits beyond the trees.
+        One ordinary drive home turns into a nightmare.
+        A deer appears on the road, the driver loses control,
+        and the darkness hides something unexpected.
+      </p>
+
+      <p class="story">
+        How far would you go to find your way back?
       </p>
     </section>
   </main>
 
   <footer>
-    BLACK PINES &copy; 2026 — Official Website
+    NO WAY BACK &copy; 2026 — OFFICIAL WEBSITE
   </footer>
 </body>
 </html>
